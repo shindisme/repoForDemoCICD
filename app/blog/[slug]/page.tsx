@@ -9,5 +9,17 @@ export async function generateMetadata({ params }: Params) {
 }
 
 export default function Page({ params }: Params) {
-  return <><h1>Slug: {params.slug}</h1><p>HoleText</p></>;
+  return <>
+  <h1>Slug: {params.slug}</h1>
+  <p>HoleText</p>
+  <p>Welcome to HCM</p>
+  <p>Welcome to VN</p>
+  </>;
+}
+export async function generateStaticParams() {
+  return [
+    { slug: "hello-world" },
+    { slug: "nextjs" },
+    { slug: "hoc-lap-trinh" },
+  ];
 }
