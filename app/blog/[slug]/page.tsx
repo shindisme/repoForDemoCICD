@@ -16,3 +16,10 @@ export default function Page({ params }: Params) {
   <p>Welcome to VN</p>
   </>;
 }
+export async function generateStaticParams() {
+  return [
+    { slug: "hello-world" },
+    { slug: "nextjs" },
+    { slug: "hoc-lap-trinh" },
+  ];
+}
